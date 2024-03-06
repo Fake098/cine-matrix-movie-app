@@ -1,0 +1,68 @@
+.carouselSection {
+  position: relative;
+  margin-bottom: 70px;
+  & > .contentWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .carouselTitle {
+    font-size: 24px;
+    color: white;
+    font-weight: normal;
+  }
+}
+
+.carousel {
+  display: flex;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel-item {
+  flex: 0 0 100%;
+  scroll-snap-align: start;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+  border-right: 1px solid #ccc;
+}
+
+.carousel-item:last-child {
+  border-right: none;
+}
+
+.red {
+  color: white;
+}
+
+.orange {
+  color: white;
+}
+
+.yellow {
+  color: black;
+}
+
+.green {
+  color: white;
+}
+
+.blue {
+  color: white;
+}
+
+.indigo {
+  color: white;
+}
+
+.purple {
+  color: white;
+}
